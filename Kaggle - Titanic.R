@@ -2,11 +2,17 @@
 # Table of Contents
 #******************************************************
 
-# 1. ETL - Load & Transform Data
-# 2. EDA - Exploratory Data Analysis
-# 3. Scoring
-# 4. Appendix
+# 1. Objective
+# 2. ETL - Load & Transform Data
+# 3. EDA - Exploratory Data Analysis
+# 4. Scoring
+# 5. Appendix
 
+
+#******************************************************
+# Objective
+#******************************************************
+# Determine survival of those aboard the Titanic.  Survive or Die?
 
 
 #******************************************************

@@ -1,3 +1,10 @@
+#******************************************************
+# Objective
+#******************************************************
+# Measure customer sentiment over time using NLP.
+
+
+
 install.packages("twitteR")
 install.packages("plyr")
 install.packages("stringr")

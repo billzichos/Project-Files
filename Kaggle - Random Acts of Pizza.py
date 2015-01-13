@@ -1,10 +1,16 @@
+#******************************************************
+# Objective
+#******************************************************
+# Determine whether or not a person's free pizza request will be fullfilled.
+
+
 import json
 import nltk
 from nltk.probability import FreqDist
 
 print('Begin loading training data...')
 
-filepath = 'C:\\Users\\Bill\\SkyDrive\\Documents\\Kaggle\\Random Acts of Pizza\\train.json\\train.json'
+filepath = 'C:\\Users\\Bill\\Documents\\GitHub\\Project-Files\\Kaggle - Random Acts of Pizza Train.json'
 
 json_data = open(filepath)
 
