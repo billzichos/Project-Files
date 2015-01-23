@@ -49,6 +49,12 @@ for file in filepaths:
         data = json.load(json_data)
         #******************************************************
         # Add features to the datasets
+        # 1. Sentence Count
+        # 2. Word Count
+        # 3. Lexical Diversity
+        # 4. Request Text Flag
+        # 5. Picture Flag
+        # 6. Curse Word Flag
         #******************************************************
         for item in data:
                 if len(item['request_text'])>0:
@@ -64,6 +70,14 @@ for file in filepaths:
                         item['Picture']=1
                 else:
                         item['Picture']=0
+        # replace with the badWords I accumulated in a private file.
+        badWords = ['crap', 'poop']
+        for item in data:
+                item['CurseWordFlag']=0
+        for item in data:
+                for word in nltk.word_tokenize(item['request_text']):
+                        if word in badWords:
+                                item['CurseWordFlag']=1
         #******************************************************
         # Machine Learning - Generate Algortithm
         #******************************************************
